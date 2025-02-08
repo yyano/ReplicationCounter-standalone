@@ -60,7 +60,7 @@ if (isset($request)) {
     $date = new DateTime('now');
     $date->setTimezone(new DateTimeZone($timezone ?? 'UTC'));
 
-    $datetime = $date->format('Y/m/d H:i:s');
+    $datetime = $date->format($datetimeFormat ?? 'Y-m-d H:i:s',);
     $printer->setJustification(Printer::JUSTIFY_RIGHT);
     $printer->text(sprintf("%s\n", $datetime));
 

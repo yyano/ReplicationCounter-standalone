@@ -35,6 +35,7 @@ Flight::route('GET /', function(){
         'prefix' => $prefix,
         'counter' => $counter,
         'timezone' => $_ENV['TIMEZONE'] ?? 'UTC',
+        'datetimeFormat' => $_ENV['DATETIME_FORMAT'] ?? 'Y-m-d H:i:s',
         'lpPath' => $lpPath,
         'model' => $model,
     ], 'printContent');
@@ -74,6 +75,7 @@ Flight::route('POST /', function(){
         'request' => Flight::request()->data,
         'title' => $appTitle,
         'timezone' => $_ENV['TIMEZONE'] ?? 'UTC',
+        'datetimeFormat' => $_ENV['DATETIME_FORMAT'] ?? 'Y-m-d H:i:s',
         'lpPath' => $lpPath,
         'model' => $model,
     ], 'printContent');
