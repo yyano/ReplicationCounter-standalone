@@ -65,19 +65,19 @@
 - `PRINT` button
     - Click the button to print.
 
+> [!TIP]
+> QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+
+## Print Contents
 > [!NOTE]
 > TITLE and TIMESTAMP(Y-m-d H:i:s) are always printed !
 
-    | | isset | not set | 
-    | --- | --- | --- | 
-    | string | QRCode + TEXT | (none) | 
-    | prefix | Barcode + prefix + counter<br> [AA00-0123] | counter<br>[0123] |
-    | counter | Barcode + counter<br>[0123] | (none) |
-    | all fields | QRCode + TEXT + Barcode + prefix + counter| (none) |
-
-
-> [!TIP]
-> QR Code is a registered trademark of DENSO WAVE INCORPORATED.
+| | isset | not set | 
+| --- | --- | --- | 
+| string | QRCode + TEXT | (none) | 
+| prefix | Barcode + prefix + counter<br> [AA00-0123] | counter<br>[0123] |
+| counter | Barcode + counter<br>[0123] | (none) |
+| all fields | QRCode + TEXT + Barcode + prefix + counter| (none) |
 
 ## Lisence
 - MIT Lisence
