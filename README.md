@@ -2,6 +2,7 @@
 
 ## About
 - This is a simple barcode replication and counter.
+- **Requires a thermal printer** (printer list: [mike42/escpos-php](https://github.com/mike42/escpos-php))
 - It uses the following technologies:
   - PHP 8
     - flightphp
